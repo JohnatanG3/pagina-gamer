@@ -1,0 +1,120 @@
+* {
+    margin: 0; /* Remove o espaçamento padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui bordas e margens no cálculo do tamanho total do elemento */
+    font-family: "Press Start 2P", serif; /* Define uma fonte retro para todos os elementos */
+}
+
+body {
+    background-color: #01295E; /* Define um fundo azul escuro para a página */
+}
+
+div {
+    transition: opacity 1s; /* Adiciona uma transição suave na opacidade dos elementos <div> */
+}
+
+img {
+    width: 100%; /* Garante que as imagens ocupem 100% da largura do elemento pai */
+}
+
+h1 {
+    color: #2CFF05; /* Define a cor verde para o texto do título */
+    text-align: center; /* Centraliza o texto */
+    margin: 2.1875rem 0; /* Adiciona margem vertical ao título */
+}
+
+p {
+    font-size: 1.5rem; /* Define o tamanho do texto do parágrafo */
+    color: #2CFF05; /* Define a cor verde para o texto */
+    margin: 1.875rem; /* Adiciona margem ao redor do parágrafo */
+    text-align: justify; /* Alinha o texto dos parágrafos de forma justificada */
+}
+
+form {
+    background: #FFFFFF; /* Define o fundo branco para o formulário */
+    padding: 1.25rem; /* Adiciona espaçamento interno ao formulário */
+    border-radius: 10px; /* Arredonda os cantos do formulário */
+    position: fixed; /* Fixa o formulário em relação à janela do navegador */
+    top: 50%; /* Centraliza o formulário verticalmente */
+    left: 50%; /* Centraliza o formulário horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o formulário para ficar exatamente no centro */
+    opacity: 0; /* Torna o formulário invisível inicialmente */
+    transition: opacity 1s; /* Adiciona uma transição suave na opacidade */
+}
+
+label {
+    display: block; /* Faz os rótulos ocuparem uma linha inteira */
+    padding: .625rem; /* Adiciona espaçamento interno ao rótulo */
+}
+
+input {
+    display: block; /* Faz os campos de entrada ocuparem uma linha inteira */
+    background: #F9F9F9; /* Define um fundo cinza claro */
+    border: 1px solid #E6E6E6; /* Adiciona uma borda cinza clara */
+    border-radius: 5px; /* Arredonda os cantos dos campos de entrada */
+    height: 3.125rem; /* Define a altura dos campos de entrada */
+    width: 22rem; /* Define a largura dos campos de entrada */
+    padding-left: .625rem; /* Adiciona espaçamento interno à esquerda */
+    margin-bottom: 1.25rem; /* Adiciona margem inferior entre os campos */
+}
+
+textarea {
+    display: block; /* Faz o campo de texto ocupar uma linha inteira */
+    background: #F9F9F9; /* Define um fundo cinza claro */
+    border: 1px solid #E6E6E6; /* Adiciona uma borda cinza clara */
+    border-radius: 5px; /* Arredonda os cantos do campo de texto */
+    height: 6.25rem; /* Define a altura do campo de texto */
+    width: 22rem; /* Define a largura do campo de texto */
+    padding: .625rem; /* Adiciona espaçamento interno */
+    resize: none; /* Impede o redimensionamento manual do campo */
+    margin-bottom: 1.25rem; /* Adiciona margem inferior */
+}
+
+button {
+    background: #40BB15; /* Define o fundo verde dos botões */
+    border: none; /* Remove as bordas padrão */
+    padding: .625rem; /* Adiciona espaçamento interno */
+    border-radius: 5px; /* Arredonda os cantos dos botões */
+    font-weight: bold; /* Torna o texto dos botões em negrito */
+    width: 10.875rem; /* Define a largura fixa dos botões */
+    cursor: pointer; /* Muda o cursor para "mão" ao passar sobre o botão */
+    transition: 0.3s; /* Adiciona uma transição suave em alterações */
+}
+
+button:hover {
+    opacity: 0.8; /* Reduz a opacidade ao passar o mouse */
+}
+
+button:active {
+    opacity: 0.6; /* Reduz ainda mais a opacidade ao clicar */
+}
+
+.botao-voltar {
+    background: #FF0000; /* Define o fundo vermelho para o botão de voltar */
+}
+
+.botao-contato {
+    display: flex; /* Usa flexbox para alinhar elementos */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+    line-height: 1.2rem; /* Define o espaçamento entre as linhas */
+    margin-bottom: 1.25rem; /* Adiciona margem inferior */
+}
+
+@media (max-width: 750px) {
+    form {
+        width: 90%; /* Ajusta a largura do formulário para dispositivos menores */
+    }
+
+    input {
+        width: 100%; /* Faz os campos de entrada ocuparem toda a largura do formulário */
+    }
+
+    textarea {
+        width: 100%; /* Faz o campo de texto ocupar toda a largura do formulário */
+    }
+
+    .botoes {
+        display: flex; /* Usa flexbox para alinhar botões horizontalmente */
+        gap: .625rem; /* Adiciona espaçamento entre os botões */
+    }
+}

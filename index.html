@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/4000_4_07.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página Gamer</title>
+</head>
+<body>
+    <div class="container">
+        <img src="./assets/gamer.png" alt="foto-inicial-gamer">
+        <h1>O que Você Encontra Aqui!</h1>
+        <p>
+            Bem-vindo ao seu novo lugar favorito na internet! Aqui você vai encontrar tudo sobre o mundo dos jogos, desde análises detalhadas de lançamentos, até dicas e truques para dominar seus jogos favoritos. Se você é apaixonado por games, essa página foi feita especialmente para você.
+        </p>
+        <p>
+            Se você está em busca de um lugar para se divertir, competir e fazer novas amizades, o <strong>Games Club</strong> é o seu novo lar! Aqui, você encontra uma comunidade apaixonada por games, onde todos são bem-vindos, desde os iniciantes até os veteranos. Junte-se a nós para jogar os títulos mais populares ou explorar novos mundos em jogos online e multiplayer. Não importa se você gosta de ação, aventura, estratégia ou esportes eletrônicos, temos espaço para todos. Venha jogar conosco e fazer parte de uma experiência única no universo gamer!
+        </p>
+        <p>
+            Exploramos desde os títulos mais populares até os indies mais promissores, com informações que vão te manter sempre atualizado. Se você está atrás de notícias quentes sobre os jogos, ou quer se aprofundar nas mecânicas e estratégias de cada título, você está no lugar certo.
+        </p>
+        <p>
+            Prepare-se para se imergir em um universo cheio de desafios, conquistas e muito entretenimento. Está pronto para a diversão? Vamos lá!
+        </p>
+        <button class="botao-contato" onclick="abrirFormulario()">Entrar em Contato</button>
+    </div>
+    <form action="https://formsubmit.co/johnatan.g3@gmail.com" method="POST">
+        <label for="name">Nome</label>
+        <input type="text" name="name" placeholder="Digite seu Nome" required>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" placeholder="Digite seu E-mail" required>
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" placeholder="Digite sua Dúvida Aqui..."></textarea>
+        <div class="botoes">
+            <button type="submit">ENVIAR</button>
+            <button type="button" class="botao-voltar" onclick="voltar()">VOLTAR</button>
+        </div>
+   </form>
+</body>
+<script src="scripts.js"></script>
+</html>
